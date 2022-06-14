@@ -6,8 +6,8 @@ class HeaderItem {
   final bool isButton;
 
   HeaderItem({
-    required this.title,
-    required this.onTap,
+    this.title,
+    this.onTap,
     this.isButton = false,
   });
 }
