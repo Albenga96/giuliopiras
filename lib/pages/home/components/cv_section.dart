@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:giuliopiras/models/design_process.dart';
+import 'package:giuliopiras/utils/constants.dart';
+import 'package:giuliopiras/utils/screen_helper.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:web_portfolio/models/design_process.dart';
-import 'package:web_portfolio/utils/constants.dart';
-import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
@@ -83,16 +82,16 @@ class CvSection extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 50.0,
           ),
           Container(
             child: LayoutBuilder(
               builder: (_context, constraints) {
                 return ResponsiveGridView.builder(
-                  padding: EdgeInsets.all(0.0),
+                  padding: const EdgeInsets.all(0.0),
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   alignment: Alignment.topCenter,
                   gridDelegate: ResponsiveGridDelegate(
                     mainAxisSpacing: 20.0,
@@ -118,7 +117,7 @@ class CvSection extends StatelessWidget {
                                 designProcesses[index].imagePath,
                                 width: 40.0,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 15.0,
                               ),
                               Text(
@@ -131,12 +130,12 @@ class CvSection extends StatelessWidget {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15.0,
                           ),
                           Text(
                             designProcesses[index].subtitle,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: kCaptionColor,
                               height: 1.5,
                               fontSize: 14.0,

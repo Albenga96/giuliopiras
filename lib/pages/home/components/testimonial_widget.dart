@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:giuliopiras/models/testimonial.dart';
+import 'package:giuliopiras/utils/constants.dart';
+import 'package:giuliopiras/utils/screen_helper.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:web_portfolio/models/testimonial.dart';
-import 'package:web_portfolio/utils/constants.dart';
-import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<Testimonial> testimonials = [
   Testimonial(
@@ -25,12 +25,10 @@ final List<Testimonial> testimonials = [
 class TestimonialWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ScreenHelper(
-        desktop: _buildUi(kDesktopMaxWidth),
-        tablet: _buildUi(kTabletMaxWidth),
-        mobile: _buildUi(getMobileMaxWidth(context)),
-      ),
+    return ScreenHelper(
+      desktop: _buildUi(kDesktopMaxWidth),
+      tablet: _buildUi(kTabletMaxWidth),
+      mobile: _buildUi(getMobileMaxWidth(context)),
     );
   }
 }
@@ -55,13 +53,13 @@ Widget _buildUi(double width) {
                   height: 1.3,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Container(
-                constraints: BoxConstraints(maxWidth: 400.0),
+                constraints: const BoxConstraints(maxWidth: 400.0),
                 child: RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     children: [
                       TextSpan(
                         text:
@@ -83,7 +81,7 @@ Widget _buildUi(double width) {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 45.0,
               ),
               Flex(
@@ -96,27 +94,25 @@ Widget _buildUi(double width) {
                     flex: ScreenHelper.isMobile(context) ? 0 : 1,
                     child: Container(
                       padding: const EdgeInsets.all(8.0),
-                      margin: EdgeInsets.only(bottom: 50.0),
+                      margin: const EdgeInsets.only(bottom: 50.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            child: Image.asset(
-                              "assets/quote.png",
-                              width: 50.0,
-                            ),
+                          Image.asset(
+                            "assets/quote.png",
+                            width: 50.0,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15.0,
                           ),
                           Text(
                             testimonial.text,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: kCaptionColor,
                               height: 1.8,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15.0,
                           ),
                           Row(
@@ -128,7 +124,7 @@ Widget _buildUi(double width) {
                                   testimonial.profilePhoto,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 20.0,
                               ),
                               Column(
@@ -142,12 +138,12 @@ Widget _buildUi(double width) {
                                       fontSize: 16.0,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4.0,
                                   ),
                                   Text(
                                     testimonial.occupation,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: kCaptionColor,
                                     ),
                                   )

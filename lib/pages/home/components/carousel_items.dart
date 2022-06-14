@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:giuliopiras/models/carousel_item_model.dart';
+import 'package:giuliopiras/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:web_portfolio/models/carousel_item_model.dart';
-import 'package:web_portfolio/utils/constants.dart';
 
 List<CarouselItemModel> carouselItems = List.generate(
   5,
@@ -21,7 +21,7 @@ List<CarouselItemModel> carouselItems = List.generate(
               fontSize: 16.0,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 18.0,
           ),
           Text(
@@ -33,10 +33,10 @@ List<CarouselItemModel> carouselItems = List.generate(
               height: 1.3,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
-          Text(
+          const Text(
             "Full-stack developer, based in Barcelona",
             style: TextStyle(
               color: kCaptionColor,
@@ -44,38 +44,36 @@ List<CarouselItemModel> carouselItems = List.generate(
               height: 1.0,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
-          Container(
-            child: Wrap(
-              children: [
-                Text(
-                  "Need a full custom website?",
-                  style: TextStyle(
-                    color: kCaptionColor,
-                    fontSize: 15.0,
-                    height: 1.5,
-                  ),
+          Wrap(
+            children: [
+              const Text(
+                "Need a full custom website?",
+                style: TextStyle(
+                  color: kCaptionColor,
+                  fontSize: 15.0,
+                  height: 1.5,
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: Text(
-                      " Got a project? Let's talk.",
-                      style: TextStyle(
-                        height: 1.5,
-                        color: Colors.white,
-                        fontSize: 15.0,
-                      ),
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: const MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: Text(
+                    " Got a project? Let's talk.",
+                    style: TextStyle(
+                      height: 1.5,
+                      color: Colors.white,
+                      fontSize: 15.0,
                     ),
                   ),
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25.0,
           ),
           MouseRegion(
@@ -86,12 +84,12 @@ List<CarouselItemModel> carouselItems = List.generate(
                 borderRadius: BorderRadius.circular(8.0),
               ),
               height: 48.0,
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 28.0,
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "GET STARTED",
                   style: TextStyle(
                     color: Colors.white,
@@ -105,11 +103,9 @@ List<CarouselItemModel> carouselItems = List.generate(
         ],
       ),
     ),
-    image: Container(
-      child: Image.asset(
-        "assets/person.png",
-        fit: BoxFit.contain,
-      ),
+    image: Image.asset(
+      "assets/person.png",
+      fit: BoxFit.contain,
     ),
   ),
 );
