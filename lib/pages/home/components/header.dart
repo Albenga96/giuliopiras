@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:giuliopiras/models/header_item.dart';
 import 'package:giuliopiras/utils/constants.dart';
 import 'package:giuliopiras/utils/globals.dart';
@@ -147,7 +146,7 @@ class Header extends StatelessWidget {
                 Globals.scaffoldKey.currentState!.openEndDrawer();
               },
               child: const Icon(
-                FlutterIcons.menu_fea,
+                Icons.menu,
                 color: Colors.white,
                 size: 28.0,
               ),
