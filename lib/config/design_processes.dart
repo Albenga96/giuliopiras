@@ -2,27 +2,25 @@ import 'package:giuliopiras/models/design_process.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
-    title: "DESIGN",
+    title: "COMPOSIZIONE",
     imagePath: "assets/design.png",
     subtitle:
-        "A full stack allround designer thay may or may not include a guide for specific creative",
+        "Composizioni originali suonate dai migliori musicisti emergenti del panorama italiano.",
   ),
   DesignProcess(
-    title: "DEVELOP",
+    title: "ARRANGIAMENTI",
     imagePath: "assets/develop.png",
     subtitle:
-        "A full stack allround developer thay may or may not include a guide for specific creative",
+        "Arrangiamenti di brani conosciuti, rivisitati in chiave personale.",
   ),
   DesignProcess(
-    title: "WRITE",
+    title: "SCRITTURA",
     imagePath: "assets/write.png",
-    subtitle:
-        "A full stack allround writer thay may or may not include a guide for specific creative",
+    subtitle: "Scrittura di poesie per accompagnare i testi musicali.",
   ),
   DesignProcess(
-    title: "PROMOTE",
+    title: "COLLABORAZIONI",
     imagePath: "assets/promote.png",
-    subtitle:
-        "A full stack allround promoter thay may or may not include a guide for specific creative",
+    subtitle: "Collaborazioni a 360° con musicisti e poeti.",
   ),
 ];
