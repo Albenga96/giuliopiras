@@ -14,7 +14,7 @@ List<CarouselItemModel> carouselItems = List.generate(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            "PRODUCT DESIGNER",
+            "COMPOSITORE",
             style: GoogleFonts.oswald(
               color: kPrimaryColor,
               fontWeight: FontWeight.w900,
@@ -25,7 +25,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 18.0,
           ),
           Text(
-            "MICHELE\nHARRINGTON",
+            "GIULIO\nPIRAS",
             style: GoogleFonts.oswald(
               color: Colors.white,
               fontSize: 40.0,
@@ -37,7 +37,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 10.0,
           ),
           const Text(
-            "Full-stack developer, based in Barcelona",
+            "Compositore",
             style: TextStyle(
               color: kCaptionColor,
               fontSize: 15.0,
@@ -47,10 +47,11 @@ List<CarouselItemModel> carouselItems = List.generate(
           const SizedBox(
             height: 10.0,
           ),
-          Wrap(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Need a full custom website?",
+                "Hai bisogno di un brano?",
                 style: TextStyle(
                   color: kCaptionColor,
                   fontSize: 15.0,
@@ -62,7 +63,7 @@ List<CarouselItemModel> carouselItems = List.generate(
                 child: const MouseRegion(
                   cursor: SystemMouseCursors.click,
                   child: Text(
-                    " Got a project? Let's talk.",
+                    "Hai in mente una collaborazione? Parliamone.",
                     style: TextStyle(
                       height: 1.5,
                       color: Colors.white,
@@ -90,7 +91,7 @@ List<CarouselItemModel> carouselItems = List.generate(
               child: TextButton(
                 onPressed: () {},
                 child: const Text(
-                  "GET STARTED",
+                  "INIZIA",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 13.0,

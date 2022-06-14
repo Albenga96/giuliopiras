@@ -8,27 +8,21 @@ import 'package:responsive_framework/responsive_framework.dart';
 final List<Education> educationList = [
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2019 - PRESENT",
+        "Laurea Magistralw in Composizione presso il conservatorio Franci di Siena.",
+    linkName: "www.istitutofranci.com",
+    period: "2020 - 2022",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below.This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2018 - 2019",
+        "Laurea triennale in Composizione presso il conservatorio Franci di Siena.",
+    linkName: "www.istitutofranci.com",
+    period: "2016 - 2020",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2017 - 2018",
-  ),
-  Education(
-    description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2016 - 2017",
+        "Diploma di scuola superiore presso il liceo musicale di Arezzo.",
+    linkName: "www.liceomusicalearezzo.com",
+    period: "2011 - 2016",
   ),
 ];
 
